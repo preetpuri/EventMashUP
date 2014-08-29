@@ -1,0 +1,18 @@
+{% extends '../layouts/default.html' %}
+
+{% block main %}
+  <form action="/" method="get" class="signup form-horizontal">
+    <div class="control-group">
+      <b><label for="name" class="control-label">Name</label></b>
+      <output>{{user.name}}</output> 
+    </div>
+    <div class="control-group">
+      <b><label for="email" class="control-label">Email</label></b>
+      <output>{{user.email}}</output> 
+    </div>
+    <div class="control-group">
+      <b><label for="email" class="control-label">Provider</label></b>
+      <output>{{user.provider}}</output> 
+    </div>
+  </form>
+{% endblock %}
